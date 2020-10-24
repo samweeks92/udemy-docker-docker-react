@@ -1,0 +1,10 @@
+language: generic
+sudo: required
+services:
+    - docker
+
+before_install:
+    - docker build -t samweeks/udemy-docker-docker-react -f Dockerfile.dev .
+
+script:
+    - docker run -e CI=true samweeks/udemy-docker-docker-react npm run test -- --coverage
