@@ -1,5 +1,5 @@
-//import logo from './logo.svg';
-import logo from './luke.gif';
+import logo from './logo.svg';
+//import logo from './luke.gif';
 import './App.css';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          I love d and d!
+          this is a custom message!
         </p>
         <a
           className="App-link"
